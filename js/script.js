@@ -50,13 +50,15 @@ SubmitBtn.addEventListener("click", function() {
     Name.innerHTML = `il tuo nome è ${UserName}`;
 
     const Result = document.getElementById("result");
-    Result.innerHTML = PriceKm * UserKm
-        if(document.getElementById(under18)){
+    
+        if(document.getElementById(user-age)){
             FinalPrice=Result-(Result*20/100)
         }
-        else if(document.getElementById(over65)){
+        else if(document.getElementById(user-age)){
             FinalPrice=Result-(Result*40/100)
         }
+        
+    Result.innerHTML = PriceKm * UserKm
 
     FinalPrice = Result
 });
