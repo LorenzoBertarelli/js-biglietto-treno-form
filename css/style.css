@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background-calc, .background-price {
+    background-color: rgb(211, 43, 94);
+    color: white;
+    text-align: center;
+}

@@ -10,16 +10,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 id="result"></h1>
-    <div>
-        <label for="user-age">Indica la tua età</label>
-        <input type="text" id="user-age">
+    <section class="background-calc">
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+        <div>
+            <label for="user-name">Nome Cognome</label>
+            <input type="text" id="user-name">
 
-        <label for="user-km">Indica i Km che vuoi percorrere</label>
-        <input type="text" id="user-km">
+            <label for="user-km">Km da percorrere</label>
+            <input type="text" id="user-km">
 
-        <button id="submit-btn">Invia</button>
-    </div>
+            <label for="user-age">Fascia d'età</label>
+            <select id="user-age">
+                <option id="under18" value="Minorenne">Minorenne</option>
+                <option value="Maggiornne">Maggiorenne</option>
+                <option id="over65" value="Over65">Over65</option>
+            </select>
+
+            <button id="submit-btn">Invia</button>
+        </div>
+    </section>
+
+    <section class="background-price">
+        <h2 id="name"></h2>
+        <h2 id="result"></h2>  
+    </section>
+      
+    
+
+
     <!-- LINK JS -->
     <script src="js/script.js"></script>
 </body>
