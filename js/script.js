@@ -1,32 +1,3 @@
-// Chiedo all'utente il numero di km che vuole percorrere
-// const UserKm = parseInt(prompt("Quanti km vuole percorrere?"));
-// console.log(UserKm);
-// // Chiedo all'utente la sua età
-// const UserAge = parseInt(prompt("Quanti anni hai?"));
-// console.log(UserAge);
-
-// // Prezzo del biglietto definito in base ai km (0.21 € al km)
-// const PriceKm = 0.21
-// let BasePrice = UserKm*PriceKm
-// FinalPrice = BasePrice
-// console.log(FinalPrice);
-
-// // Applicazione sconto del 20% per i minorenni
-// // Applicazione sconto del 40% per gli over 65
-// if(UserAge<18){
-//     FinalPrice=FinalPrice*(1-0.20)
-// }
-// else if(UserAge>=65){
-//     FinalPrice=FinalPrice*(1-0.40)
-// }
-// console.log(FinalPrice);
-
-// Risultato a schermo
-
-// const message = `Il prezzo del biglietto è € ${BasePrice.toFixed(2)} con lo sconto il prezzo finale è di € ${FinalPrice.toFixed(2)}`;
-
-// document.getElementById("result").innerHTML = message;
-
 // Prezzo del biglietto definito in base ai km (0.21 € al km) 
 const PriceKm = 0.21
 
@@ -47,18 +18,16 @@ SubmitBtn.addEventListener("click", function() {
     
     // Stampa scelte utente
     const Name = document.getElementById("name");
-    Name.innerHTML = `il tuo nome è ${UserName}`;
+    Name.innerHTML = UserName;
 
     const Result = document.getElementById("result");
-    
-        if(document.getElementById(user-age)){
-            FinalPrice=Result-(Result*20/100)
+    let FinalPrice = PriceKm * UserKm
+        if(document.getElementById("user-age").value==="Minorenne"){
+            FinalPrice=FinalPrice-(FinalPrice*20/100)
         }
-        else if(document.getElementById(user-age)){
-            FinalPrice=Result-(Result*40/100)
+        else if(document.getElementById("user-age").value==="Over65"){
+            FinalPrice=FinalPrice-(FinalPrice*40/100)
         }
         
-    Result.innerHTML = PriceKm * UserKm
-
-    FinalPrice = Result
+    Result.innerHTML = FinalPrice
 });
